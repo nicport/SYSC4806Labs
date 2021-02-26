@@ -1,17 +1,17 @@
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+package com.example.accessingdatajpa;
+
+import javax.persistence.*;
 import java.util.Collection;
 import java.util.List;
 
 @Entity
 public class BuddyInfo {
+
     private String name;
     private String phoneNum;
-    private String id;
+    private long id;
 
-    public BuddyInfo() {
+    protected BuddyInfo() {
         name = "John Doe";
         phoneNum = "111111";
     }
@@ -38,14 +38,22 @@ public class BuddyInfo {
     }
 
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
     @Id
     @GeneratedValue
-    public String getId() {
+    public long getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Buddy: id=%d, name ='%s', number='%s'",
+                id, name, phoneNum
+        );
     }
 
 }

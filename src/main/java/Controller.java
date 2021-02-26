@@ -5,6 +5,7 @@ public class Controller implements ActionListener {
     private View app;
 
     public void actionPerformed(ActionEvent e) {
+        /*
         if(e.getSource() == app.getAddBuddy()) {
             try {
                 BuddyInfo buddy = new BuddyInfo();
@@ -33,6 +34,8 @@ public class Controller implements ActionListener {
 
     public void setApp(View app) {
         this.app = app;
+    */
     }
+
 
 }

@@ -6,6 +6,7 @@ import javax.swing.*;
 
 
 public class View extends JFrame{
+    /*
     AddressBook addressBook;
     Controller controller;
     private JFrame frame;
@@ -63,7 +64,7 @@ public class View extends JFrame{
     }
 
 
-    /*
+
     public static void main(String[] args) {
         AddressBook addBook = new AddressBook();
         Controller controller = new Controller();

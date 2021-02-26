@@ -8,6 +8,7 @@ import javax.persistence.Query;
 
 public class JPATest {
     public static void main(String[] args) {
+        /*
         BuddyInfo buddy1 = new BuddyInfo();
         BuddyInfo buddy2 = new BuddyInfo();
         buddy2.setName("Connor");
@@ -67,5 +68,9 @@ public class JPATest {
         em.close();
 
         emf.close();
+    */
     }
+
+
+
 }
